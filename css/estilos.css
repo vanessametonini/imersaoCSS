@@ -1,0 +1,37 @@
+body {
+  background-image: url('../img/fundo.jpg');
+  background-size: auto 100vh;
+  height: 100vh;
+}
+
+#menu {
+  background-color: white;
+}
+
+#menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+#menu li {
+  list-style: none;
+}
+
+#menu a {
+  color: teal;
+  text-decoration: none;
+}
+
+.site-title {
+  color: whitesmoke;
+  font-size: 40px;
+  text-align: center;
+}
+
+.site-subtitle {
+  color: silver;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: center;
+}
+
