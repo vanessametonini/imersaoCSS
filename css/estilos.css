@@ -1,11 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-image: url('../img/fundo.jpg');
   background-size: auto 100vh;
   height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
 
 .menu {
   background-color: white;
+  /* margin: 10px 30px; */
+  margin-bottom: 50px;
 }
 
 .menu ul {
@@ -20,10 +29,13 @@ body {
 .menu a {
   color: teal;
   text-decoration: none;
+  padding: 10px;
+  display: block;
 }
 
 .site-title {
   color: whitesmoke;
+  font-family: 'Dancing Script', cursive;
   font-size: 40px;
   text-align: center;
 }
@@ -33,5 +45,10 @@ body {
   font-style: italic;
   font-weight: lighter;
   text-align: center;
+}
+
+.img-portifolio {
+  width: 100px;
+  height: 100px;
 }
 
