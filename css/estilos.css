@@ -71,10 +71,12 @@ header {
   font-size: 2em;
 }
 
+.contato,
 .portfolio {
   padding: 1em;
 }
 
+.contato h2,
 .portfolio h2 {
   color: white;
   font-family: 'Carter One', cursive;
@@ -82,7 +84,7 @@ header {
   margin-bottom: .5em;
 }
 
-.portfolio .grid {
+ .grid {
   color: silver;
   display: grid;
   gap: 1em;
@@ -92,23 +94,25 @@ header {
 }
 
 @media (min-width: 400px) {
+  .contato,
   .portfolio {
     padding: 3em 2em 2em;
     height: 100vh;
   }
 
-  .portfolio .grid {
+   .grid {
     grid-template-columns: 200px 200px;
     height: calc(100vh - 4.5em - 75px);
   }
 }
 
 @media (min-width: 940px) {
+  .contato,
   .portfolio {
     padding: 2em;
   }
 
-  .portfolio .grid {
+   .grid {
     grid-template-columns: repeat(4, 200px);
     height: calc(100vh - 8em - 75px);
   }
@@ -123,4 +127,9 @@ header {
   height: 180px;
   object-fit: cover;
   width: 180px;
+}
+
+.icons a {
+  color: white;
+  font-size: 6em;
 }
