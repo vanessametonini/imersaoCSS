@@ -138,3 +138,8 @@ header {
   color: white;
   font-size: 6em;
 }
+
+.icons a:hover {
+  color: teal;
+  background-color: white;
+}
