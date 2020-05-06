@@ -8,6 +8,7 @@ body {
   background-image: url('../img/fundo.jpg');
   background-size: auto 100vh;
   height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media (min-width: 400px) {
@@ -55,6 +56,10 @@ header {
 
 .site-title {
   color: whitesmoke;
+  font-family: 'Dancing Script', cursive;
+  font-size: 4em;
+  line-height: 1em;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -66,7 +71,50 @@ header {
   font-size: 2em;
 }
 
+.portfolio {
+  padding: 1em;
+}
+
+.portfolio h2 {
+  color: white;
+  font-family: 'Carter One', cursive;
+  font-size: 2.2em;
+  margin-bottom: .5em;
+}
+
+.portfolio .grid {
+  color: silver;
+  display: grid;
+  gap: 1em;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 400px) {
+  .portfolio .grid {
+    grid-template-columns: 200px 200px;
+  }
+}
+
+@media (min-width: 940px) {
+  .portfolio {
+    padding: 2em;
+    height: 100vh;
+  }
+
+  .portfolio .grid {
+    grid-template-columns: repeat(4, 200px);
+    height: calc(100vh - 8em - 75px);
+  }
+}
+
+.portfolio figcaption {
+  font-weight: bold;
+}
+
 .img-portfolio {
+  border-radius: 10px;
   height: 180px;
   width: 180px;
 }
