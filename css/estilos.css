@@ -92,15 +92,20 @@ header {
 }
 
 @media (min-width: 400px) {
+  .portfolio {
+    padding: 3em 2em 2em;
+    height: 100vh;
+  }
+
   .portfolio .grid {
     grid-template-columns: 200px 200px;
+    height: calc(100vh - 4.5em - 75px);
   }
 }
 
 @media (min-width: 940px) {
   .portfolio {
     padding: 2em;
-    height: 100vh;
   }
 
   .portfolio .grid {
@@ -116,5 +121,6 @@ header {
 .img-portfolio {
   border-radius: 10px;
   height: 180px;
+  object-fit: cover;
   width: 180px;
 }
