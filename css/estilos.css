@@ -4,20 +4,20 @@ body {
   height: 100vh;
 }
 
-#menu {
+.menu {
   background-color: white;
 }
 
-#menu ul {
+.menu ul {
   display: flex;
   justify-content: space-around;
 }
 
-#menu li {
+.menu li {
   list-style: none;
 }
 
-#menu a {
+.menu a {
   color: teal;
   text-decoration: none;
 }
