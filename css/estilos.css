@@ -54,6 +54,11 @@ header {
   text-decoration: none;
 }
 
+.menu a:hover{
+  color: white;
+  background-color: teal;
+}
+
 .site-title {
   color: whitesmoke;
   font-family: 'Dancing Script', cursive;
