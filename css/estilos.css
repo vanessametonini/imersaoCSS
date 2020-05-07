@@ -47,16 +47,51 @@ header {
   list-style: none;
 }
 
+/* property name | duration | timing function | delay */
 .menu a {
   color: teal;
   display: block;
-  padding: 10px;
+  padding: 10px 15px;
   text-decoration: none;
+  transition: 1s;
 }
 
-.menu a:hover{
-  color: white;
+.menu a:active,
+.menu a:hover {
   background-color: teal;
+  color: white;
+}
+
+@keyframes animacaoTitulo {
+
+  0%   { 
+    opacity: 0;
+    transform: scale(0.8) translateY(10vh);
+  }  
+
+  100% {
+     opacity: 1; 
+     transform: scale(1) translateY(0); 
+  }
+  
+}
+
+/* Aplicando direto na classe pra começar dessa forma inicial sem esperar o carregamento da pagina */
+.titulo {
+  opacity: 0;
+  transform: scale(0.8) translateY(10vh);
+  animation: 1s ease-out .2s 1 forwards animacaoTitulo;
+
+  /*
+    Descrição das propriedades de animações (s/short-hand)
+  
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-name: animacaoInicial; 
+  */
 }
 
 .site-title {
@@ -139,40 +174,8 @@ header {
   font-size: 6em;
 }
 
-.icons a:hover {
-  color: teal;
-  background-color: white;
+.icons a:active i,
+.icons a:hover i {
+  text-shadow: 0 0 10px rgba(255,255,255,1);
+  transition: .5s;
 }
-
-@keyframes animacaoInicial {
-  /* 0%   { 
-    opacity: 0;
-    transform: scale(0.5); 
-    transform: translate(0, 75vh);
-  } */
-  100% {
-    /* do transparente pro opaco */
-     opacity: 1; 
-     /* so pequeno pro grande e de cima pra baixo */
-     transform: scale(1) translate(0, -50%); 
-  }
-}
-
-/* Aplicando direto na classe pra começar dessa forma inicial sem esperar o carregamento da pagina */
-.titulo{
-  opacity:0;
-  transform: scale(0.5);
-  animation: 3s ease-out 0s 1 animacaoInicial forwards;
-
-  /*
-    Descrição das propriedades de animações (s/short-hand)
-  
-    animation-duration: 3s;
-    animation-timing-function: ease-out;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-name: animacaoInicial; 
-  */
-}
-
