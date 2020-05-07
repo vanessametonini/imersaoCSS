@@ -36,6 +36,7 @@ header {
   position: fixed;
   top: 0;
   width: 100vw;
+  z-index: 1;
 }
 
 .menu ul {
@@ -53,7 +54,7 @@ header {
   display: block;
   padding: 10px 15px;
   text-decoration: none;
-  transition: 1s;
+  transition: color, background-color 1s;
 }
 
 .menu a:active,
