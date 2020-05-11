@@ -180,3 +180,43 @@ header {
   text-shadow: 0 0 10px rgba(255,255,255,1);
   transition: .5s;
 }
+
+.flip-card {
+  background-color: transparent;
+  width: 180px;
+  height: 180px;
+
+  /* perspectiva para elementos 3d posicionados */
+  /* Quando definimos a perspectiva em um elemento, é o elemento filho que recebe a visão de perspectiva, e não ele mesmo */
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  /* Faz com que ele gire em torno do seu eixo Y, dando a impressão que que o card está virando */
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* configura a parte de trás de ambos os lados para não aparecerem, p/ dar a impressão de que são um card só */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  background-color: white;
+  color: teal;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+}
