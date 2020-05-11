@@ -95,12 +95,15 @@ header {
   */
 }
 
-.site-title {
+.site-title , .nome-sobre {
   color: whitesmoke;
   font-family: 'Dancing Script', cursive;
   font-size: 4em;
   line-height: 1em;
   margin-bottom: 20px;
+}
+
+.site-title  {
   text-align: center;
 }
 
@@ -218,3 +221,4 @@ header {
   transform: rotateY(180deg);
   border-radius: 10px;
 }
+

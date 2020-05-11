@@ -1,0 +1,43 @@
+header{
+    height: auto;
+}
+
+/* Pagina sobre */
+
+
+  
+  p{
+    color:white;
+    text-align:justify;
+  }
+  
+  /* herdei da linha 98 do arquivo estilos.css */
+  .nome-sobre{
+    text-align: center;
+  }
+  
+  @keyframes animacaoSobre {
+
+    0%   { 
+      opacity: 0;
+      transform:translateX(-10vh);
+    }  
+  
+    100% {
+       opacity: 1;
+       transform: translateX(0); 
+    }
+    
+  }
+
+  .img-perfil{
+    /* tive que usar medidas responsivas aqui pra não quebrar no mobile pelo tamanho da img */
+    width:20em;
+    height:20em;
+    float: left;
+    margin: 0 20px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    animation: 1s ease-out .2s 1 forwards animacaoSobre;
+    opacity: 0;
+  }
+
