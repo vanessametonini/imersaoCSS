@@ -195,7 +195,6 @@ header {
   position: relative;
   width: 100%;
   height: 100%;
-  text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
 }
@@ -210,7 +209,6 @@ header {
   width: 100%;
   height: 100%;
   /* configura a parte de trás de ambos os lados para não aparecerem, p/ dar a impressão de que são um card só */
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
