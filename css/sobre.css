@@ -1,18 +1,21 @@
 header{
-    height: auto;
+  height: auto;
 }
 
 /* Pagina sobre */
 
-
+  .texto {
+    /* clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); */
+  }
   
   p{
     color:white;
+    margin-bottom: 2em;;
     text-align:justify;
   }
   
   /* herdei da linha 98 do arquivo estilos.css */
-  .nome-sobre{
+  .nome-sobre {
     text-align: center;
   }
   
@@ -20,7 +23,7 @@ header{
 
     0%   { 
       opacity: 0;
-      transform:translateX(-10vh);
+      transform:translateX(-3vh);
     }  
   
     100% {
@@ -30,12 +33,14 @@ header{
     
   }
 
+  figure {
+    margin: 0 auto 2em;
+  }
+
   .img-perfil{
     /* tive que usar medidas responsivas aqui pra não quebrar no mobile pelo tamanho da img */
-    width:20em;
-    height:20em;
-    float: left;
-    margin: 0 20px;
+
+    max-width: 100%;
     opacity: 0;
     animation: 1s ease-out .2s 1 forwards animacaoSobre;
     
@@ -48,5 +53,16 @@ header{
      /* efeito de estrela */
     /* clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); */
 
+  }
+
+  @media (min-width: 600px){
+    figure {
+      margin-left: 0;
+      margin-right: 2em;
+    }
+
+    .img-perfil{
+      float: left;
+    }
   }
 
